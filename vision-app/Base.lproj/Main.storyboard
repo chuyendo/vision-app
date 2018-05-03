@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -59,17 +58,6 @@
                                             <constraint firstAttribute="height" constant="60" id="eDv-y7-aDX"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-1a-eYI" customClass="RoundedShadowButton" customModule="vision_app" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="615" width="85" height="32"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="85" id="Gc5-UR-hYe"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
-                                        <state key="normal" title="FLASH OFF">
-                                            <color key="titleColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="liJ-2d-kWc" customClass="RoundedShadowImageView" customModule="vision_app" customModuleProvider="target">
                                         <rect key="frame" x="280" y="519" width="75" height="128"/>
                                         <constraints>
@@ -77,16 +65,29 @@
                                             <constraint firstAttribute="width" constant="75" id="gbb-ns-7h0"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-1a-eYI" customClass="RoundedShadowButton" customModule="vision_app" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="615" width="85" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="0NT-mA-as1"/>
+                                            <constraint firstAttribute="width" constant="85" id="Gc5-UR-hYe"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="YJW-RY-Nof"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="FLASH OFF">
+                                            <color key="titleColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.80667722225189209" blue="0.3656998872756958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="kbT-1a-eYI" secondAttribute="bottom" constant="20" id="6O8-J8-UZ9"/>
-                                    <constraint firstItem="tAA-z3-02x" firstAttribute="leading" secondItem="RJ2-dj-34M" secondAttribute="leading" constant="20" id="LnN-sE-DSH"/>
-                                    <constraint firstAttribute="trailing" secondItem="tAA-z3-02x" secondAttribute="trailing" constant="20" id="bzz-UD-OEg"/>
-                                    <constraint firstAttribute="bottom" secondItem="liJ-2d-kWc" secondAttribute="bottom" constant="20" id="sMD-ME-cRt"/>
-                                    <constraint firstItem="kbT-1a-eYI" firstAttribute="leading" secondItem="RJ2-dj-34M" secondAttribute="leading" constant="20" id="vD5-ay-eJP"/>
-                                    <constraint firstAttribute="trailing" secondItem="liJ-2d-kWc" secondAttribute="trailing" constant="20" id="wxm-1i-DZf"/>
-                                    <constraint firstItem="tAA-z3-02x" firstAttribute="top" secondItem="RJ2-dj-34M" secondAttribute="top" constant="30" id="xFw-lv-77s"/>
+                                    <constraint firstItem="tAA-z3-02x" firstAttribute="leading" secondItem="RJ2-dj-34M" secondAttribute="leading" constant="20" id="9rH-31-UOg"/>
+                                    <constraint firstAttribute="trailing" secondItem="tAA-z3-02x" secondAttribute="trailing" constant="20" id="FSL-HE-xnd"/>
+                                    <constraint firstAttribute="trailing" secondItem="liJ-2d-kWc" secondAttribute="trailing" constant="20" id="UR2-Bk-kWm"/>
+                                    <constraint firstItem="kbT-1a-eYI" firstAttribute="leading" secondItem="RJ2-dj-34M" secondAttribute="leading" constant="20" id="Wad-ER-zfU"/>
+                                    <constraint firstAttribute="bottom" secondItem="liJ-2d-kWc" secondAttribute="bottom" constant="20" id="bbZ-oq-Sjf"/>
+                                    <constraint firstAttribute="bottom" secondItem="kbT-1a-eYI" secondAttribute="bottom" constant="20" id="dp8-WK-bst"/>
+                                    <constraint firstItem="tAA-z3-02x" firstAttribute="top" secondItem="RJ2-dj-34M" secondAttribute="top" constant="30" id="jSt-YR-y5V"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -99,7 +100,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cameraView" destination="tAA-z3-02x" id="eul-DK-EY2"/>
+                        <outlet property="cameraView" destination="RJ2-dj-34M" id="KAv-fV-dxf"/>
                         <outlet property="captureImageView" destination="liJ-2d-kWc" id="pSo-EO-Qoj"/>
                         <outlet property="confidenceLbl" destination="Nuq-kN-ee6" id="SmV-zH-Ofo"/>
                         <outlet property="flashBtn" destination="kbT-1a-eYI" id="FDs-4X-eik"/>
