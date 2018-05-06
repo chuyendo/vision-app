@@ -76,6 +76,10 @@
                                     <action selector="flashBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x61-6r-9Ep"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Udm-mK-uHJ">
+                                <rect key="frame" x="307" y="573" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -87,8 +91,10 @@
                             <constraint firstItem="kbT-1a-eYI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="e6B-Oo-qjv"/>
                             <constraint firstItem="tAA-z3-02x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="fOQ-py-Gt8"/>
                             <constraint firstAttribute="trailing" secondItem="RJ2-dj-34M" secondAttribute="trailing" id="fxX-PI-Nrw"/>
+                            <constraint firstItem="Udm-mK-uHJ" firstAttribute="centerX" secondItem="liJ-2d-kWc" secondAttribute="centerX" id="m4j-8P-FQs"/>
                             <constraint firstAttribute="trailing" secondItem="tAA-z3-02x" secondAttribute="trailing" constant="20" id="nJC-Be-Fn0"/>
                             <constraint firstItem="RJ2-dj-34M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vvW-TO-ZTT"/>
+                            <constraint firstItem="Udm-mK-uHJ" firstAttribute="centerY" secondItem="liJ-2d-kWc" secondAttribute="centerY" id="yvf-Ty-iFg"/>
                             <constraint firstItem="opp-Sc-Nsr" firstAttribute="top" secondItem="liJ-2d-kWc" secondAttribute="bottom" constant="20" id="zWd-O2-IWv"/>
                         </constraints>
                     </view>
@@ -99,6 +105,7 @@
                         <outlet property="flashBtn" destination="kbT-1a-eYI" id="FDs-4X-eik"/>
                         <outlet property="identificationLbl" destination="Fuf-aJ-lNs" id="59S-5g-Bkj"/>
                         <outlet property="roundedLblView" destination="tAA-z3-02x" id="Xik-qQ-yks"/>
+                        <outlet property="spinner" destination="Udm-mK-uHJ" id="XxR-wg-gMM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
